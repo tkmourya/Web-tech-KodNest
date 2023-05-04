@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Validation of username</title>
+    </head>
+    <body>
+        <form action="https://www.kodnest.com">
+            <fieldset>
+                <legend>Personal Details</legend>
+                <lable>UserName</lable>
+                <input type="text" required name="uname" id="uname" placeholder="Ex: Tarun" pattern="[a-zA-Z]{3,8}"><br><br> <!--pattern attribute gived limitation and spacifed ex: -A To Z-->
+
+                    <label>Phone number</label>
+                    <input type="text" required name="pnum" id="pnum" placeholder="Ex: 733XXXXXXX" pattern="[6-9]{1}[0-9]{9}">
+                </fieldset>
+                <br>
+                <input type="submit">
+            </body>
+</html>

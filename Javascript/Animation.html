@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+        #box{
+            background-color: azure;
+            border: 1px solid black;
+            width: 400px;
+            height: 400px;
+            position: relative;
+            margin: auto;
+
+        }
+        #circle{
+                background-color: brown;
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                border-radius: 25px;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Animation</h1>
+    <button onclick="anim()">click</button><br><br>
+    <div id="box">
+      <div id="circle"></div>
+    </div>
+    <script>
+      function anim() {
+        var c = document.getElementById("circle");
+        var c1 = 0;
+        var id = setInterval(Animate, 5);
+        function Animate() {
+          if (c1 == 350) {
+            clearInterval(id);
+            
+
+          } 
+          else {
+            c1++;
+            c.style.top = c1 + "px";
+            c.style.right = c1 + "px";
+            
+            
+          }
+        }
+      }
+      
+    </script>
+  </body>
+</html>

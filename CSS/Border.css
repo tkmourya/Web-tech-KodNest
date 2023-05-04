@@ -1,0 +1,40 @@
+#st{color: rgb(245, 144, 11);
+    border: 2px solid violet;
+    height: 25px;
+    width: 400px;
+    border-radius: 9px;
+}
+
+#nd{color: rgb(11, 245, 140);
+    border: 3px solid black;
+    height: 30px;
+    width: 500px;
+    border-radius: 10px;
+}
+#rd{
+    margin: auto;
+    width: 50%;
+    border: 3px solid;
+    border-left: 4px solid red;
+    border-right: 4px solid brown;
+    border-bottom: 3px solid pink;
+    border-top: 3px solid palevioletred;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius:15px;
+}
+h1,h2{
+    border-radius: 60%;
+    text-align: center;
+    border: 6px solid blue;
+    background-color: aqua;
+}
+#imagebackground{
+    border: 3px solid rgb(169, 11, 16);
+    width: 70%;
+    height: 50px;
+    background-image:url("https://i.stack.imgur.com/jGlzr.png");
+}
+body{
+    background-image: url("https://img2.goodfon.com/wallpaper/nbig/4/12/nastroeniya-babochka-babochki.jpg");
+    background-repeat: no-repeat;
+}

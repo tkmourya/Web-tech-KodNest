@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>phone number</title>
+    <script>
+        function validate() {
+        var res = document.getElementById("phone").value;
+        var t=/^[6-9]{1}[0-9]{9}$/.test(res)
+        if(t==false){
+            document.getElementById("msg").innerHTML = "invalid phone number";
+            document.getElementById("phone").style.border="2px solid red";
+            console.log("Invalid")
+            return false;
+        }
+    }
+    </script>
+</head>
+<body>
+    <form onsubmit="return validate()">
+    <label>phone Number</label>
+      <input type="text" name="phone" id="phone" />
+      <span id="msg" style="color: red">*</span><br /><br />
+      <input type="submit" value="submit" />
+    </form>
+</body>
+</html>

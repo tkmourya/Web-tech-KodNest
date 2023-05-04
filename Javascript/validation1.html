@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation phone no</title>
+    <script>
+        function validate() {
+        var res = document.getElementById("phone").value;
+        if (res.length==0) {
+            document.getElementById("msg").innerHTML = "phone number should not be empty";
+            return false;
+      }
+      else if(isNaN(res)){
+        document.getElementById("msg").innerHTML = "phone number should have only one digit";
+        return false;
+      }
+      else if(res.length<10){
+        document.getElementById("msg").innerHTML = "phone number should have minmum 10 digits";
+        return false;
+      }
+      else if(res.length>10){
+        document.getElementById("msg").innerHTML = "phone number should not have more than 10 digits";
+        return false;
+      }
+    }
+    </script>
+</head>
+<body>
+    <form onsubmit="return validate()">
+        <label>phone Number</label>
+      <input type="tel" name="phone" id="phone" />
+      <span id="msg" style="color: red">*</span><br /><br />
+      <input type="submit" value="submit" />
+    </form>
+</body>
+</html>

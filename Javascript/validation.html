@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>validation name</title>
+    <script>
+      function validate() {
+        var res = document.getElementById("fname").value;
+        if (res == 0) {
+          document.getElementById("msg").innerHTML = "firstname is required";
+          return false;
+        } else if (res.length < 3) {
+          document.getElementById("msg").innerHTML =
+            "firstname should have minimum 3 characters";
+          return false;
+        } else if (res.length > 8) {
+          document.getElementById("msg").innerHTML =
+            "firstname should have no more than 8 characters";
+          return false;
+        }
+      }
+      
+    </script>
+  </head>
+  <body>
+    <form onsubmit=" return validate()">
+      <label>firstname</label>
+      <input type="text" name="firstname" id="fname" />
+      <span id="msg" style="color: red">*</span><br /><br />
+      <input type="submit" value="submit">
+      
+    </form>
+  </body>
+</html>

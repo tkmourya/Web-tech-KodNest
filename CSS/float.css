@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  font-family: "Bad Script", cursive;
+  background-color: cadetblue;
+}
+.container {
+  /* overflow: auto; */
+  background-color: rgb(66, 212, 217);
+  border: 3px solid violet;
+  margin: auto;
+  width: 1000px;
+}
+.item {
+  border: 3px solid gray;
+  padding: 11px 22px;
+  margin: 8px 9px;
+  background-color: beige;
+}
+
+#Fruit {
+  float: right;
+  width: 48%;
+}
+#Computer {
+  float: left;
+  width: 48%;
+}
+#Stainary {
+  clear: both;
+  /* float: left; */
+  width: 98%;
+}
+#Shop {
+  /* float: left; */
+  width: 98%;
+}
+p {
+  text-align: justify;
+  text-align: center;
+}
+h1 {
+  margin: 7px auto;
+  width: 30%;
+}
