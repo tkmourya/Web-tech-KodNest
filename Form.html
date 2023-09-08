@@ -2,16 +2,23 @@
 <html>
     <head>
         <title> User Form</title>
+        <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+        <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+
     </head>
     <body>
-        <form action="https://formspree.io/f/xvojogyo " method="POST">
+        <form action=https://usebasin.com/f/5781711baa6e method="POST">
             <label>Name</label>
             <input type="text" placeholder="Please enter" required id="name" name="name"><br><br> <!--required is showing mandatory in text box-->
             <label>Email</label>
             <input type="email" placeholder="Please enter email" required id="email" name="email"><br><br>
             <label>Age</label>
             <input type="number" placeholder="Please enter age" required id="age" name="age"><br><br>
+            <!-- <div class="g-recaptcha" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy"></div> -->
+            <div class="h-captcha" data-sitekey="7fe715a1-151f-4c63-b497-bd971974df05"></div><br>
             <input type="submit">
         </form>
+       
+
     </body>
 </html>

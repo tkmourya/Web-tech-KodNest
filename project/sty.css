@@ -9,9 +9,10 @@
 html{
     font-size: 62.5%;
     overflow-x: hidden;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-body{
+body{background-image: url(image2.jpg);
+    background-position:  10px center; 
     background-color: #111;
     overflow: hidden;
     padding-left: 35rem;
@@ -27,7 +28,7 @@ body{
 }
 
 .heading span{
-    color: yellow;
+    color: #ffc107;
 }
 
 .title{
@@ -40,7 +41,7 @@ body{
 }
 
 .title span{
-    color: yellow;
+    color: #ffc107;
 }
 
 .head{
@@ -52,7 +53,7 @@ body{
     color: #fff;
 }
 .head span{
-    color: yellow;
+    color: #ffc107;
 }
 .pro{
     text-align: center;
@@ -63,7 +64,7 @@ body{
     color: #fff;
 }
 .pro span{
-    color: yellow;
+    color: #ffc107;
 }
 header{
     position:fixed;
@@ -72,7 +73,7 @@ header{
     z-index: 1000;
     height: 100%;
     width: 35rem;
-    background:#1a1a1a;
+    background:#1a1a1a9e;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,16 +86,16 @@ header .user img{
     width: 13rem;
     border-radius: 50%;
     object-fit: cover;
-    border: .5rem solid;
+    border: .3rem solid #ffc107;
 }
 
 header .user .nm{
-    font-size:2rem;
-    color: #fff;
+    font-size:2.5rem;
+    color: #ffc107;
 }
 
 header .user .jb{
-    font-size:1rem;
+    font-size:1.5rem;
     color: #fff;
 }
 
@@ -117,7 +118,7 @@ header .nv ul li a{
     text-decoration: none;  
 }
 header .nv ul li a:hover{
-    background-color:yellowgreen;
+    background-color:#ffc107;
 }
 
 .Details .Row{
@@ -136,17 +137,17 @@ header .nv ul li a:hover{
 
 .Details .Row .det h3{
     font-size: 2rem;
-    color: yellow;
+    color: #ffc107;
     padding: 1rem 0;
     font-weight: normal;
 }
 
 .Details .Row .det h3 span{
     color: #eee;
-    padding: 0. 5rem;
+    padding: .5rem;
 }
 table,th,td{
-    border: 1px solid yellow;
+    border: 1px solid #ffc107;
     border-collapse: collapse;
 }
 td{
@@ -187,12 +188,14 @@ table{
 
 .Project .Row .det h3{
     font-size: 2rem;
-    color: yellow;
+    color: #ffc107;
     padding: 1rem 0;
-    font-weight: normal;
+    font-weight:lighter;
 }
 
-.Project .Row .det h3 span{
+.Project .Row .det span{
     color: #eee;
     padding: 0. 5rem;
+    font-size: 2.5rem;
+    font-weight :400;
 }
